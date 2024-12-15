@@ -26,6 +26,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt  # Install any dependencies
 
-    - name: Run Tic Tac Toe game
+    - name: Run the monte carlo simulation
       run: |
-        python app.py  # Run the Tic Tac Toe script
+        python app.py  # Run the script
