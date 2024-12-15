@@ -1,5 +1,4 @@
 import random
-import math
 import numpy as np
 from scipy import integrate
 import matplotlib.pyplot as plt
@@ -16,7 +15,6 @@ def monte_carlo_pi(num_samples: int) -> float:
 
 
 def main():
-    
     num_samples = 1000000
     print(f"Monte Carlo estimate of Pi with {num_samples} samples: {monte_carlo_pi(num_samples)}")
     x_vals = [random.random() for _ in range(num_samples)]
