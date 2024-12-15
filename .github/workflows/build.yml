@@ -28,4 +28,4 @@ jobs:
 
     - name: Run Tic Tac Toe game
       run: |
-        python tic_tac_toe.py  # Run the Tic Tac Toe script
+        python app.py  # Run the Tic Tac Toe script
