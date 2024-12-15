@@ -1,0 +1,31 @@
+name: Python Tic Tac Toe Game
+
+on:
+  push:
+    branches:
+      - main  # Trigger workflow on push to the main branch
+  pull_request:
+    branches:
+      - main  # Trigger workflow for pull requests
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Run the job on Ubuntu's latest image
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3  # Checkout the repository code
+
+    - name: Set up Python
+      uses: actions/setup-python@v4  # Set up Python environment
+      with:
+        python-version: '3.8'  # Use Python version 3.8 (or any version you prefer)
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt  # Install any dependencies
+
+    - name: Run Tic Tac Toe game
+      run: |
+        python tic_tac_toe.py  # Run the Tic Tac Toe script
