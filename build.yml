@@ -28,4 +28,4 @@ jobs:
 
     - name: Run the Python app
       run: |
-        python matrix_app.py  # Run your Python script
+        python app.py  # Run your Python script
