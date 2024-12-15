@@ -1,4 +1,4 @@
-name: Python Tic Tac Toe Game
+name: Python Pie with Monte Carlo
 
 on:
   push:
